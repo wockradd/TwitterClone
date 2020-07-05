@@ -9,6 +9,8 @@ const PORT = 5000 || process.env.PORT
 const db = monk("localhost/twitterClone" || process.env.MONGO_URI)
 const tweets = db.get("tweets")
 
+console.log(process.env)
+
 
 app.use(cors())
 app.use(express.json())
