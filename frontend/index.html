@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Twitter but shit</h1>
+    </header>
+    <main>
+        <div class="centered">
+            <form>
+                <label>Name:</label><br>
+                <input type="text" name="name"><br>
+                <label>Message:</label><br>
+                <input type="text" name="message"><br>
+                <input type="submit">
+            </form>
+        </div>
+        <br>
+        <div id="loading" class="centered">
+            <img src="./images/loading.gif" alt="loading...">
+        </div>
+        <br>
+        <div id="tweets"></div>
+    </main>
+    <script src="./client.js"></script>
+</body>
+</html>

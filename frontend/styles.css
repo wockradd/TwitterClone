@@ -1,0 +1,14 @@
+header{
+    text-align: center;
+}
+
+.centered{
+    display: block;
+    text-align: center;   
+}
+
+.tweet{
+    border: 3px solid gray;
+    width: 50%;
+    margin: auto;
+}
