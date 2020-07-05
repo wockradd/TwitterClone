@@ -2,6 +2,7 @@ const express = require("express")
 const cors = require("cors")
 const monk = require("monk")
 const rateLimit = require("express-rate-limit");
+const dotenv = require("dotenv").config()
 
 const app = express()
 const PORT = 5000 || process.env.PORT
