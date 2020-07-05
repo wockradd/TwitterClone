@@ -5,8 +5,8 @@ const rateLimit = require("express-rate-limit");
 const dotenv = require("dotenv").config()
 
 const app = express()
-const PORT = 5000 || process.env.PORT
-const db = monk("localhost/twitterClone" || process.env.MONGO_URI)
+const PORT = process.env.PORT || 5000
+const db = monk( process.env.MONGO_URI || "localhost/twitterClone" )
 const tweets = db.get("tweets")
 
 console.log(process.env)
